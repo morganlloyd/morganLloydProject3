@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+//form component
+import Form from './components/Form';
+import Affirmations from './components/Affirmations';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className='wrapper'>
+        <h1> PROJECT 3 </h1> 
       </header>
-    </div>
+
+      <main>
+        <Form />
+
+        <Affirmations />
+      </main>
+      <footer className='wrapper'>
+        made with 🖤  by morgan lloyd at juno college
+      </footer>
+    </>
   );
 }
 
