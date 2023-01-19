@@ -10,11 +10,8 @@ const Form = () => {
 
     const handleChange = (e) => {
         setAffirmationInput(e.target.value)
-
-        // console.log(e.target.value);
     }
 
-    // console.log(affirmationInput)
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -25,6 +22,8 @@ const Form = () => {
 
         setAffirmationInput("");
     }
+
+
     return (
         <section className="inputForm wrapper">
 
