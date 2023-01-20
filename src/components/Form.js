@@ -36,7 +36,7 @@ const Form = () => {
                 <input type="text" name="affirmationInput" onChange= {handleChange} value={affirmationInput} placeholder="ie. i am a successful front-end dev!"/>
                 
                 
-                <button>submit</button>
+                <button disabled={!affirmationInput}>submit</button>
             </form>
 
         </section>

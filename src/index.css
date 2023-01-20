@@ -6,10 +6,20 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+
+/* FONTS */
+@font-face {
+  font-family: "Vanilla Ravi";
+  src: url(./fonts/vanilla-ravi\ copy.ttf);
+}
+
 /* BASE STYLES */
 
 body {
-  background-color: white;
+  padding: 0;
+  margin: 0;
+  background-color: #fff3e4;
+
 }
 
 .wrapper {
@@ -22,6 +32,75 @@ body {
 
 header {
   text-align: center;
+  font-size: 50px;
+  font-family: "Vanilla Ravi";
+  letter-spacing: 4px;
+  /* text-transform: uppercase; */
 }
 
+.titleStyles {
+  position: relative;
+  right: -80px;
+
+}
+
+/* AFFIRMATION WALL */
+.affirmationWall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+  padding-left: 0px;
+}
+
+li {
+  background-color: #d9d9d9;
+  border: 1px solid #3d5361;
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  position: relative;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #3d5361;
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: darkgray;
+  transition: .2s ease-in-out;
+}
+
+.delete:hover,
+.delete:focus {
+  color: #000;
+}
 /* FORM */
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
