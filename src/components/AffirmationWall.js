@@ -37,7 +37,7 @@ const AffirmationWall = () => {
             }
 
             setAffirmations(arrayOfAffirmations);
-            console.log(affirmations);
+            
         })
     }, [])
 

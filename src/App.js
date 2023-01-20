@@ -1,10 +1,17 @@
+import './index.css'
+
 import AffirmationWall from './components/AffirmationWall';
 
 function App() {
   return (
     
     <>
-    <h1>affirmation app</h1>
+    <header className='wrapper'>
+
+      <h1>Affirm <br /> <span className='titleStyles'>Believe</span> <br /> Recieve</h1>
+
+    </header>
+
     <AffirmationWall />
     </>
   );
