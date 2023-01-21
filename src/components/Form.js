@@ -29,9 +29,9 @@ const Form = () => {
 
             <form action="" onSubmit={handleSubmit}>
 
-                <label htmlFor="affirmationInput">
+                {/* <label htmlFor="affirmationInput">
                     enter a affirmation that inspires you below
-                </label>
+                </label> */}
 
                 <input type="text" name="affirmationInput" onChange= {handleChange} value={affirmationInput} placeholder="ie. i am a successful front-end dev!"/>
                 

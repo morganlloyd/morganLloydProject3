@@ -56,6 +56,7 @@ const AffirmationWall = () => {
         
         <>
         <Form />
+
         <section className="affirmationWall wrapper">
         {/* map through our array of affirmations and return an AffirmationItem for each */}
         <ul>
@@ -69,6 +70,7 @@ const AffirmationWall = () => {
                     })
                 }
             </ul>
+            
         </section>
         </>
     )
