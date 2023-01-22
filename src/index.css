@@ -17,6 +17,10 @@ DARK GEEN #6F6855
   font-family: "Vanilla Ravi";
   src: url(./fonts/vanilla-ravi\ copy.ttf);
 }
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url(./fonts/CaviarDreams\ copy.ttf);
+}
 
 
 /* BASE STYLES */
@@ -25,6 +29,9 @@ body {
   padding: 0;
   margin: 0;
   background-color: #d4d7db;
+  letter-spacing: 2px;
+  font-family: "Caviar Dreams", Arial;
+  font-size: 20px;
 
 }
 
@@ -38,11 +45,17 @@ body {
 
 header {
   text-align: center;
-  font-size: 50px;
-  font-family: "Vanilla Ravi";
-  letter-spacing: 4px;
   color: black;
   /* text-transform: uppercase; */
+}
+
+header h1 {
+  font-size: 80px;
+  font-family: "Vanilla Ravi";
+}
+
+header p {
+  margin: 40px 0px;
 }
 
 .titleStyles {
@@ -64,24 +77,23 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  width: 40%;
+  width: 100%;
 }
 
 input {
   border: none;
-  border-bottom: 2px solid black;
-  background: transparent;
-  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  width: 350px;
   text-align: center;
+  font-size: 15px;
 }
 
-button {
-  border-radius: 50%;
-  padding: 10px;
-  background-color: #fff;
-  color: #36332b;
+.submitBtn {
+  background-color: darkgrey;
   border: none;
-  width: 30%;
+  padding: 10px 40px;
+  color: #36332b;
 
 }
 /* AFFIRMATION WALL */
@@ -104,10 +116,11 @@ ul {
 li {
   background-color: #fff;
   border: 1px solid #6F6855;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   padding: 20px;
   position: relative;
+  word-wrap: break-word;
 }
 
 p {
@@ -117,8 +130,8 @@ p {
 
 .delete {
   position: absolute;
-  right: -15px;
-  top: -5px;
+  right: 0px;
+  top: 0px;
   border: none;
   background: transparent;
   cursor: pointer;

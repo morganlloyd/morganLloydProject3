@@ -33,10 +33,10 @@ const Form = () => {
                     enter a affirmation that inspires you below
                 </label> */}
 
-                <input type="text" name="affirmationInput" onChange= {handleChange} value={affirmationInput} placeholder="ie. i am a successful front-end dev!"/>
+                <input type="text" name="affirmationInput" onChange= {handleChange} value={affirmationInput} placeholder="ie. i am a successful front-end dev!" autoComplete="off" maxLength={120}/>
                 
                 
-                <button disabled={!affirmationInput}>submit</button>
+                <button className="submitBtn" disabled={!affirmationInput}>submit</button>
             </form>
 
         </section>

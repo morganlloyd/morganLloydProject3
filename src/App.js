@@ -8,8 +8,8 @@ function App() {
     <>
     <header className='wrapper'>
 
-      <h1>Affirm <br /> <span className='titleStyles'>Believe</span> <br /> Recieve</h1>
-
+      <h1>Affirm <br/> <span className='titleStyles'>Believe</span> <br/> Recieve</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus? Quasi facilis veritatis doloribus impedit vero expedita est earum rem facere sequi accusamus!</p>
     </header>
 
     <AffirmationWall />
