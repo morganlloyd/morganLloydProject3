@@ -43,8 +43,10 @@ function App() {
 
         </header>
 
-        <AffirmationWall />
-
+        <main>
+          <AffirmationWall />
+        </main>
+        
         </div>
 
         

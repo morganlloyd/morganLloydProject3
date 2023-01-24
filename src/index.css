@@ -19,6 +19,7 @@ html { box-sizing: border-box;}
 }
 
 
+
 /* BASE STYLES */
 
 .app {
@@ -63,6 +64,8 @@ header h1 {
 
 }
 
+
+
 /* FORM */
 
 .inputForm {
@@ -86,6 +89,7 @@ input {
   width: 350px;
   text-align: center;
   font-size: 15px;
+  outline: none;
   
 }
 
@@ -103,7 +107,10 @@ input {
 
 }
 
+
+
 /* AFFIRMATION WALL */
+
 .affirmationWall {
   display: flex;
   flex-direction: column;
@@ -130,8 +137,6 @@ li {
   text-transform: uppercase;
   position: relative;
   word-wrap: break-word;
-  
-  
 }
 
 p {
@@ -155,6 +160,8 @@ p {
 .delete:focus {
   color: #d7543d;
 }
+
+
 
 /* LIGHT/DARK THEME */
 
@@ -184,6 +191,8 @@ p {
   padding-top: 20px;
 }
 
+
+
 /* FOOTER */
 
 footer {
@@ -197,3 +206,6 @@ footer {
   left: 0;
   bottom: 0;
 }
+
+
+/* MEDIA QUERIES */
