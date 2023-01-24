@@ -27,7 +27,7 @@ function App() {
                 sunny 
               </span>
             </label>
-            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} checkedIcon={false} uncheckedIcon={false} onColor={"#1111"}/>
+            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} checkedIcon={false} uncheckedIcon={false} onColor={"#e65339"}/>
             <label>
               <span class="material-symbols-outlined">
                 dark_mode
@@ -39,13 +39,18 @@ function App() {
           <span className='titleStyles'>Believe</span>
           <br/> Recieve</h1>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus? Quasi facilis veritatis doloribus impedit vero expedita est earum rem facere sequi accusamus!</p>
+          <p className='headerTxt'>Affirmations are positive statements that can help you overcome negative thinking and self-sabotaging beliefs. Use them to manifest goals, dreams or anything your heart desires. Enter your favourite affirmations below, and repeat daily!</p>
 
         </header>
 
         <AffirmationWall />
 
-      </div>
+        </div>
+
+        
+      <footer id='dark light'>
+          made with 🖤 by Morgan Lloyd at Juno College 
+        </footer>
 
     </ThemeContext.Provider>
   );

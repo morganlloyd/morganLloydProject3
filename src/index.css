@@ -25,8 +25,10 @@ html { box-sizing: border-box;}
   padding: 0;
   margin: 0;
   letter-spacing: 2px;
-  font-family: "Caviar Dreams", Arial;
+  font-family: 'Work Sans',
+  sans-serif;
   font-size: 20px;
+  min-height: calc(100vh - 38.5px);
 
 }
 
@@ -36,36 +38,24 @@ html { box-sizing: border-box;}
   width: 85%;
 }
 
-/* LIGHT/DARK THEME */
-#light {
-  background-color: #fff;
-}
-
-#dark {
-  background-color: #ddd;
-}
-.themeSwitch {
-  display: flex;
-  justify-content: right;
-  padding-top: 20px;
-}
 
 /* HEADER */
 
 header {
   text-align: center;
-  color: black;
-  
 }
 
 header h1 {
   font-size: 90px;
   font-family: "Vanilla Ravi";
+  letter-spacing: 5px;
+  color: #1d201f;
 }
 
-header p {
+.headerTxt {
   margin: 40px 40px;
 }
+
 
 .titleStyles {
   position: relative;
@@ -96,16 +86,23 @@ input {
   width: 350px;
   text-align: center;
   font-size: 15px;
+  
 }
 
 .submitBtn {
-  background-color: darkgrey;
+  background-color: #e65339;
   border: none;
-  padding: 10px 40px;
-  color: #36332b;
+  padding: 10px 50px;
+  text-transform: uppercase;
   cursor: pointer;
+}
+
+.submitBtn:hover,
+.submitBtn:focus {
+  background-color: #d7543d;
 
 }
+
 /* AFFIRMATION WALL */
 .affirmationWall {
   display: flex;
@@ -124,13 +121,16 @@ ul {
 }
 
 li {
-  background-color: #fff;
-  border: 1px solid #6F6855;
-  height: 250px;
-  width: 250px;
+  background-color: #FFFDFA;
+  border: 1px solid #e65339;
+  height: 300px;
+  width: 300px;
   padding: 20px;
+  font-family: "Vanilla Ravi";
+  text-transform: uppercase;
   position: relative;
   word-wrap: break-word;
+  
   
 }
 
@@ -153,7 +153,47 @@ p {
 
 .delete:hover,
 .delete:focus {
-  color: #000;
+  color: #d7543d;
 }
 
 /* LIGHT/DARK THEME */
+
+#light {
+  background-color: #FFFDFA;
+}
+
+#dark,
+#dark footer {
+  background-color: #1d201f;
+}
+
+#dark .headerTxt,
+#dark header h1,
+#dark li p,
+#dark .themeSwitch {
+  color: #f5ebe0;
+}
+
+#dark li {
+  background-color: #3d3d3d;
+}
+.themeSwitch {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+  padding-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #FFFDFA;
+  font-family: 'Work Sans',
+  sans-serif;
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
