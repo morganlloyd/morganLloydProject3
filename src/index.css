@@ -6,13 +6,9 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* COLOR CODES
-lightest green #E8E7DD
-LIGHT GREENY GRAY #D7D8D0
-BEIGEY GREEN #D5CEB5
-DARK GEEN #6F6855
 
 /* FONTS */
+
 @font-face {
   font-family: "Vanilla Ravi";
   src: url(./fonts/vanilla-ravi\ copy.ttf);
@@ -25,10 +21,9 @@ DARK GEEN #6F6855
 
 /* BASE STYLES */
 
-body {
+.app {
   padding: 0;
   margin: 0;
-  background-color: #d4d7db;
   letter-spacing: 2px;
   font-family: "Caviar Dreams", Arial;
   font-size: 20px;
@@ -41,21 +36,35 @@ body {
   width: 85%;
 }
 
+/* LIGHT/DARK THEME */
+#light {
+  background-color: #fff;
+}
+
+#dark {
+  background-color: #ddd;
+}
+.themeSwitch {
+  display: flex;
+  justify-content: right;
+  padding-top: 20px;
+}
+
 /* HEADER */
 
 header {
   text-align: center;
   color: black;
-  /* text-transform: uppercase; */
+  
 }
 
 header h1 {
-  font-size: 80px;
+  font-size: 90px;
   font-family: "Vanilla Ravi";
 }
 
 header p {
-  margin: 40px 0px;
+  margin: 40px 40px;
 }
 
 .titleStyles {
@@ -94,6 +103,7 @@ input {
   border: none;
   padding: 10px 40px;
   color: #36332b;
+  cursor: pointer;
 
 }
 /* AFFIRMATION WALL */
@@ -121,10 +131,11 @@ li {
   padding: 20px;
   position: relative;
   word-wrap: break-word;
+  
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 22px;
   color: black;
 }
 
@@ -135,7 +146,7 @@ p {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 25px;
   color: darkgray;
   transition: .2s ease-in-out;
 }
@@ -144,3 +155,5 @@ p {
 .delete:focus {
   color: #000;
 }
+
+/* LIGHT/DARK THEME */
