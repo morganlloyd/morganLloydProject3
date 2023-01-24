@@ -60,7 +60,7 @@ header h1 {
 
 .titleStyles {
   position: relative;
-  right: -80px;
+  right: -50px;
 
 }
 
@@ -209,3 +209,34 @@ footer {
 
 
 /* MEDIA QUERIES */
+
+/* @media (max-width: 1000px) {
+  li p {
+    color: purple;
+  }
+}
+
+@media (max-width: 830px) {
+  li p {
+    color: blue;
+  }
+} */
+
+@media (max-width: 500px) {
+  .wrapper {
+  width: 90%;
+  }
+
+  header h1 {
+    font-size: 75px;
+  }
+
+  .headerTxt {
+    font-size: 20px;
+    margin: 30px 0px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+}
