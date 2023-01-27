@@ -1,7 +1,8 @@
 import './index.css'
 import AffirmationWall from './components/AffirmationWall';
+// npmjs.com/package/react-switch
 import ReactSwitch from 'react-switch';
-import { createContext, useState} from 'react';
+import { createContext, useState } from 'react';
 
 export const ThemeContext = createContext(null);
 
@@ -21,20 +22,21 @@ function App() {
 
         <header className='wrapper'>
 
+          {/* LIGHT/DARK SWITCH */}
           <div className='themeSwitch'>
             <label>
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
                 sunny 
               </span>
             </label>
             <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} checkedIcon={false} uncheckedIcon={false} onColor={"#e65339"}/>
             <label>
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
                 dark_mode
               </span>
             </label>
           </div>
-
+          
           <h1>Affirm <br/> 
           <span className='titleStyles'>Believe</span>
           <br/> Recieve</h1>
