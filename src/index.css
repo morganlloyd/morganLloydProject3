@@ -13,14 +13,12 @@ html { box-sizing: border-box;}
   font-family: "Vanilla Ravi";
   src: url(./fonts/vanilla-ravi\ copy.ttf);
 }
-@font-face {
-  font-family: "Caviar Dreams";
-  src: url(./fonts/CaviarDreams\ copy.ttf);
-}
-
-
 
 /* BASE STYLES */
+
+html {
+  font-size: 62.5%;
+}
 
 .app {
   padding: 0;
@@ -28,9 +26,8 @@ html { box-sizing: border-box;}
   letter-spacing: 2px;
   font-family: 'Work Sans',
   sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   min-height: calc(100vh - 38.5px);
-
 }
 
 .wrapper {
@@ -47,7 +44,7 @@ header {
 }
 
 header h1 {
-  font-size: 90px;
+  font-size: 9rem;
   font-family: "Vanilla Ravi";
   letter-spacing: 5px;
   color: #1d201f;
@@ -57,13 +54,10 @@ header h1 {
   margin: 40px 40px;
 }
 
-
 .titleStyles {
   position: relative;
-  right: -50px;
-
+  right: -40px;
 }
-
 
 
 /* FORM */
@@ -88,7 +82,7 @@ input {
   padding: 10px;
   width: 350px;
   text-align: center;
-  font-size: 15px;
+  font-size: 1.8rem;
   outline: none;
 }
 
@@ -109,7 +103,7 @@ input {
 
 .errorMsg {
   color: red;
-  font-size: 15px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
@@ -140,26 +134,21 @@ li {
   width: 300px;
   padding: 20px;
   font-family: "Vanilla Ravi";
+  font-size: 2.5rem;
   text-transform: uppercase;
   position: relative;
   word-wrap: break-word;
 }
 
-p {
-  font-size: 22px;
-  color: black;
-}
-
 .delete {
   position: absolute;
-  left: auto;
-  bottom: auto;
   right: 0;
   top: 0;
   border: none;
+  padding: 5px;
   background: transparent;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: darkgray;
   transition: .2s ease-in-out;
 }
@@ -168,7 +157,6 @@ p {
 .delete:focus {
   color: #d7543d;
 }
-
 
 
 /* LIGHT/DARK THEME */
@@ -200,13 +188,13 @@ p {
 }
 
 
-
 /* FOOTER */
 
 footer {
   background-color: #FFFDFA;
   font-family: 'Work Sans',
   sans-serif;
+  font-size: 1.5rem;
   padding: 10px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -218,29 +206,32 @@ footer {
 
 /* MEDIA QUERIES */
 
-/* @media (max-width: 1000px) {
-  li p {
-    color: purple;
-  }
-} */
 
 @media (max-width: 830px) {
-  .headerTxt {
-    font-size: 20px;
-    margin: 30px 0px;
-  }
+  
+  .wrapper {
+      width: 90%;
+    }
 }
 
 @media (max-width: 500px) {
-  .wrapper {
-  width: 90%;
-  }
 
   header h1 {
-    font-size: 75px;
+    font-size: 7rem;
+  }
+  .headerTxt {
+    margin: 0px 20px;
+    margin-bottom: 15px;
+  }
+  .themeSwitch {
+    justify-content: center;
+  }
+
+  input {
+    width: 330px;
   }
 
   footer {
-    font-size: 15px;
+    font-size: 1.3rem;
   }
 }
