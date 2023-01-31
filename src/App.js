@@ -23,6 +23,7 @@ function App() {
         <header className='wrapper'>
 
           {/* LIGHT/DARK SWITCH */}
+
           <div className='themeSwitch'>
             <label>
               <span className="material-symbols-outlined">
@@ -37,6 +38,8 @@ function App() {
             </label>
           </div>
           
+          {/* HEADER CONTENT */}
+
           <h1>Affirm <br/> 
           <span className='titleStyles'>Believe</span>
           <br/> Recieve</h1>
@@ -45,6 +48,8 @@ function App() {
 
         </header>
 
+        {/* MAIN COMPONENTS */}
+
         <main>
           <AffirmationWall />
         </main>
@@ -52,7 +57,7 @@ function App() {
         </div>
 
         
-      <footer id='dark light'>
+        <footer id='dark light'>
           made with 🖤 by Morgan Lloyd at Juno College 
         </footer>
 

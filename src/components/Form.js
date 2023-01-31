@@ -3,7 +3,6 @@ import firebase from "../firebase";
 import { ref, getDatabase, push} from 'firebase/database';
 
 
-
 const Form = () => {
 
     const [affirmationInput, setAffirmationInput] = useState("");
@@ -20,16 +19,18 @@ const Form = () => {
         e.preventDefault();
 
         if (affirmationInput.length === 0) {
+
             setError(true)
 
         } else {
-        setError(false)
-        const db = getDatabase(firebase);
-        const dbRef = ref(db);
 
-        push(dbRef, affirmationInput);
+            setError(false)
+            const db = getDatabase(firebase);
+            const dbRef = ref(db);
 
-        setAffirmationInput("");
+            push(dbRef, affirmationInput);
+
+            setAffirmationInput("");
         }
 
     }
@@ -53,5 +54,4 @@ const Form = () => {
     )
 }
 
-// disabled={!affirmationInput}
 export default Form;
