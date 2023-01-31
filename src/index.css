@@ -99,6 +99,7 @@ input {
   padding: 10px 50px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: .2s ease-in-out;
 }
 
 .submitBtn:hover,
@@ -151,8 +152,10 @@ p {
 
 .delete {
   position: absolute;
-  right: 0%;
-  top: 0%;
+  left: auto;
+  bottom: auto;
+  right: 0;
+  top: 0;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -219,13 +222,14 @@ footer {
   li p {
     color: purple;
   }
-}
+} */
 
 @media (max-width: 830px) {
-  li p {
-    color: blue;
+  .headerTxt {
+    font-size: 20px;
+    margin: 30px 0px;
   }
-} */
+}
 
 @media (max-width: 500px) {
   .wrapper {
@@ -234,11 +238,6 @@ footer {
 
   header h1 {
     font-size: 75px;
-  }
-
-  .headerTxt {
-    font-size: 20px;
-    margin: 30px 0px;
   }
 
   footer {
