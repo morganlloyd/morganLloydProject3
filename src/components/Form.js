@@ -44,7 +44,7 @@ const Form = () => {
             <form action="" onSubmit={handleSubmit}>
 
                 
-                <input type="text" name="affirmationInput" onChange={handleChange} value={affirmationInput} placeholder="ie. i am a successful front-end dev!" autoComplete="off" maxLength={120} aria-label="input affirmation here"/>
+                <input type="text" name="affirmationInput" onChange={handleChange} value={affirmationInput} autoComplete="off" maxLength={120} aria-label="input affirmation here"/>
 
                 
                 <button className="submitBtn">submit</button>

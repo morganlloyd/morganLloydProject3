@@ -28,10 +28,11 @@ html {
   sans-serif;
   font-size: 2rem;
   min-height: calc(100vh - 38.5px);
+  
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 85%;
 }
@@ -41,13 +42,37 @@ html {
 
 header {
   text-align: center;
+  position: relative;
+  z-index: 10;
+
+}
+
+.backgroundAura {
+  background-image: url(./assets/aura2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 410px;
+  width: 410px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -10;
 }
 
 header h1 {
-  font-size: 9rem;
+  font-size: 7rem;
   font-family: "Vanilla Ravi";
   letter-spacing: 5px;
+  margin: 40px 0px;
   color: #1d201f;
+  text-transform: uppercase;
+  
+  
+  
 }
 
 .headerTxt {
@@ -235,3 +260,4 @@ footer {
     font-size: 1.3rem;
   }
 }
+
