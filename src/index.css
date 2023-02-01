@@ -32,7 +32,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 85%;
 }
@@ -52,8 +52,8 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 410px;
-  width: 410px;
+  height: 470px;
+  width: 470px;
   position: absolute;
   margin-right: auto;
   margin-left: auto;
@@ -67,21 +67,15 @@ header h1 {
   font-size: 7rem;
   font-family: "Vanilla Ravi";
   letter-spacing: 5px;
-  margin: 40px 0px;
+  margin: 50px 0px;
   color: #1d201f;
   text-transform: uppercase;
-  
-  
-  
+
 }
 
 .headerTxt {
-  margin: 40px 40px;
-}
-
-.titleStyles {
-  position: relative;
-  right: -40px;
+  margin: 40px 90px;
+  line-height: 27px;
 }
 
 
@@ -97,7 +91,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   width: 100%;
 }
 
@@ -112,7 +106,7 @@ input {
 }
 
 .submitBtn {
-  background-color: #e65339;
+  background-color: #E7641B;
   color: #1d201f;
   border: none;
   padding: 10px 50px;
@@ -131,7 +125,6 @@ input {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-
 
 
 /* AFFIRMATION WALL */
@@ -154,7 +147,7 @@ ul {
 
 li {
   background-color: #FFFDFA;
-  border: 1px solid #e65339;
+  border: 1px solid #E7641B;
   height: 300px;
   width: 300px;
   padding: 20px;
@@ -180,7 +173,7 @@ li {
 
 .delete:hover,
 .delete:focus {
-  color: #d7543d;
+  color: #E7641B;
 }
 
 
@@ -203,11 +196,11 @@ li {
 }
 
 #dark li {
-  background-color: #3d3d3d;
+  background-color: #1d201f;
 }
 .themeSwitch {
   display: flex;
-  justify-content: right;
+  justify-content: right; 
   gap: 5px;
   padding-top: 20px;
 }
@@ -231,12 +224,16 @@ footer {
 
 /* MEDIA QUERIES */
 
-
 @media (max-width: 830px) {
   
   .wrapper {
       width: 90%;
     }
+
+  .headerTxt {
+    margin: 40px 30px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -244,10 +241,16 @@ footer {
   header h1 {
     font-size: 7rem;
   }
+
   .headerTxt {
-    margin: 0px 20px;
-    margin-bottom: 15px;
+    margin: 40px 10px
   }
+
+  .backgroundAura {
+    height: 450px;
+    width: 450px;
+  }
+
   .themeSwitch {
     justify-content: center;
   }
@@ -259,5 +262,39 @@ footer {
   footer {
     font-size: 1.3rem;
   }
+
+}
+
+
+@media ( max-width: 450px ) {
+
+  .backgroundAura {
+    height: 410px;
+    width: 410px;
+  }
+
+}
+
+
+@media (max-width: 375px) {
+
+  header h1 {
+    font-size: 6.5rem;
+  }
+
+  .backgroundAura {
+    height: 350px;
+    width: 350px;
+    top: 45px;
+  }
+
+  .headerTxt {
+    margin: 40px 5px;
+  }
+
+  input {
+    width: 300px;
+  }
+
 }
 

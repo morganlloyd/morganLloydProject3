@@ -47,7 +47,7 @@ const Form = () => {
                 <input type="text" name="affirmationInput" onChange={handleChange} value={affirmationInput} autoComplete="off" maxLength={120} aria-label="input affirmation here"/>
 
                 
-                <button className="submitBtn">submit</button>
+                <button className="submitBtn">Affirm</button>
             </form>
 
         </section>

@@ -12,16 +12,16 @@ import { getDatabase, onValue, ref, remove } from "firebase/database";
 
 const AffirmationWall = () => {
 
-    // initialize state for the data recieved from firebase
+    // initialize state for data recieved from firebase
     const [ affirmations, setAffirmations ] = useState([]);
 
     // call useEffect to retrieve data from firebase
-
     useEffect(() => {
+        
         // variable that holds the database details
         const db = getDatabase(firebase)
 
-        // variable that makes reference to the database details
+        // variable to make reference to the database details
         const dbRef = ref(db)
 
         onValue(dbRef, (dbResponse) => {
@@ -41,7 +41,7 @@ const AffirmationWall = () => {
         })
     }, [])
 
-    // handleClick funtion to remove our affirmations and will be passed to AffirmationItem via props
+    // handleClick function to remove our affirmations - passed to AffirmationItem via props
 
     const handleClick = (itemKey) => {
         const db = getDatabase(firebase);
