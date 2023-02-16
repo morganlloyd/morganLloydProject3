@@ -26,12 +26,20 @@ function App() {
           {/* LIGHT/DARK SWITCH */}
 
           <div className='themeSwitch'>
+            
             <label>
               <span className="material-symbols-outlined">
                 sunny 
               </span>
             </label>
-            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} checkedIcon={false} uncheckedIcon={false} onColor={"#e65339"}/>
+
+            <label>
+              <span className="sr-only">
+                switch to {theme === "dark" ? "light theme" : "dark theme"}
+              </span>
+              <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} checkedIcon={false} uncheckedIcon={false} onColor={"#e65339"}/>
+            </label>
+            
             <label>
               <span className="material-symbols-outlined">
                 dark_mode
@@ -47,7 +55,11 @@ function App() {
 
         {/* MAIN COMPONENTS */}
 
-          <AffirmationWall />
+        <main>
+
+            <AffirmationWall />
+
+        </main>
         
         </div>
 

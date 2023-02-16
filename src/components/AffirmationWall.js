@@ -56,8 +56,6 @@ const AffirmationWall = () => {
         
         <>
 
-        <main>
-
             <Form />
 
             <section className="affirmationWall wrapper">
@@ -75,8 +73,6 @@ const AffirmationWall = () => {
                 </ul>
                 
             </section>
-            
-        </main>
 
         </>
     )
