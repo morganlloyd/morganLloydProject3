@@ -55,23 +55,29 @@ const AffirmationWall = () => {
     return (
         
         <>
-        <Form />
 
-        <section className="affirmationWall wrapper">
-        {/* map through our array of affirmations and return an AffirmationItem for each */}
-        <ul>
-                {
-                    affirmations.map((item) => {
-                        return (
-                            <AffirmationItem key={item.id} title={item.affirmation} click={ () => {
-                                handleClick(item.id) }} />
+        <main>
 
-                        )
-                    })
-                }
-            </ul>
+            <Form />
+
+            <section className="affirmationWall wrapper">
+            {/* map through our array of affirmations and return an AffirmationItem for each */}
+            <ul>
+                    {
+                        affirmations.map((item) => {
+                            return (
+                                <AffirmationItem key={item.id} title={item.affirmation} click={ () => {
+                                    handleClick(item.id) }} />
+
+                            )
+                        })
+                    }
+                </ul>
+                
+            </section>
             
-        </section>
+        </main>
+
         </>
     )
 }

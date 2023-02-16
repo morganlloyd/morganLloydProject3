@@ -5,6 +5,7 @@ const AffirmationItem = (props) => {
                 {props.title}
             </p>
             <button className="delete" onClick={props.click}>
+                <span className="sr-only">delete affirmation</span>
                 &#10005;
             </button>
         </li>

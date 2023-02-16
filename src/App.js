@@ -1,4 +1,5 @@
 import './index.css'
+import Header from './components/Header';
 import AffirmationWall from './components/AffirmationWall';
 // npmjs.com/package/react-switch
 import ReactSwitch from 'react-switch';
@@ -40,20 +41,13 @@ function App() {
           
           {/* HEADER CONTENT */}
 
-          <h1>Affirm <br/> 
-          <span className='titleStyles'>Believe</span>
-          <br/> Recieve</h1>
-
-          <p className='headerTxt'>Affirmations are positive statements that can help you overcome negative thinking and self-sabotaging beliefs. Use them to manifest goals, dreams or anything your heart desires. Enter your favourite affirmations below, and repeat daily!</p>
-          <div className='backgroundAura'></div>
+          <Header />
 
         </header>
 
         {/* MAIN COMPONENTS */}
 
-        <main>
           <AffirmationWall />
-        </main>
         
         </div>
 
